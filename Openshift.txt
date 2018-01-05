@@ -1,0 +1,17 @@
+mail:
+markopuzovic98@gmail.com
+
+sifra:
+redhatsifra
+
+Project Name:
+iisvezbehtml
+
+Project Display Name:
+The Game
+
+Application Name:
+thegame
+
+Git Repository:
+https://github.com/openshift/nodejs-ex.git
