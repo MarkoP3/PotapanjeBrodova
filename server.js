@@ -15,18 +15,14 @@ io.sockets.on('connection',function(socket)
 
 socket.emit('setpl',{msg:i});
     connections.push(socket);
-    if(connections.length<2) {
         if (i == 'beli') {
             i = 'crni';
         }
         else {
             i = 'beli';
         }
-    }
-    else
-    {
-i="Dva igraca vec igraju mozete ih gledati";
-    }
+  
+
 //console.log('neko se poveza');
 socket.on('disconnect',function(data)
 {
