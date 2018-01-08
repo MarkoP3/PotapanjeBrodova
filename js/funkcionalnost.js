@@ -16,7 +16,7 @@ if(kliknutonafiguru==false ) {
 
     x1 = x;
     y1 = y;
-     if (document.getElementById('tabla').rows[x].cells[y].innerHTML != "" && player==document.getElementById('tabla').rows[x].cells[y].getElementsByTagName('img')[0].src.split('/')[document.getElementById('tabla').rows[x].cells[y].getElementsByTagName('img')[0].src.split('/').length-1].split('_')[0]  ){
+     if (document.getElementById('tabla').rows[x].cells[y].innerHTML != "" && pl==document.getElementById('tabla').rows[x].cells[y].getElementsByTagName('img')[0].src.split('/')[document.getElementById('tabla').rows[x].cells[y].getElementsByTagName('img')[0].src.split('/').length-1].split('_')[0] ){
         mogucipotezi(document.getElementById('tabla').rows[x].cells[y].getElementsByTagName('img')[0].src);
         kliknutonafiguru = true;
         document.getElementById('tabla').rows[x].cells[y].style.opacity="0.6";
