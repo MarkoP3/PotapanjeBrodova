@@ -85,6 +85,10 @@ function mogucipotezi(r)
     if(r.includes("pijun"))
     {
 if(r.includes("crni")) {
+    if(x==1 && document.getElementById('tabla').rows[x+2].cells[y].innerHTML=="")
+    {
+     potezi += (x + 2) + "-" + y + ",";   
+    }
     if(x+1<8  && document.getElementById('tabla').rows[x+1].cells[y].innerHTML==""  )
     {potezi += (x + 1) + "-" + y + ",";}
     if( y+1<8 && document.getElementById('tabla').rows[x+1].cells[y+1].innerHTML.includes("beli") )
@@ -95,6 +99,10 @@ if(r.includes("crni")) {
 }
         else
 {
+       if(x==6 && document.getElementById('tabla').rows[x-2].cells[y].innerHTML=="")
+    {
+     potezi += (x - 2) + "-" + y + ",";   
+    }
     if(x-1>=0 && document.getElementById('tabla').rows[x-1].cells[y].innerHTML=="")
     {potezi += (x -1) + "-" + y + ",";}
     if(y+1<8 && document.getElementById('tabla').rows[x-1].cells[y+1].innerHTML.includes("crni") )
