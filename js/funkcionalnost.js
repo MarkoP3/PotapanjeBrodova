@@ -87,19 +87,19 @@ function mogucipotezi(r)
 if(r.includes("crni")) {
     if(x+1<8  && document.getElementById('tabla').rows[x+1].cells[y].innerHTML==""  )
     {potezi += (x + 1) + "-" + y + ",";}
-    if( y+1<8 && document.getElementById('tabla').rows[x+1].cells[y+1].innerHTML.includes("beli") && document.getElementById('tabla').rows[x+1].cells[y+1].getElementsByTagName('img')[0].src.split('/')[document.getElementById('tabla').rows[x+1].cells[y+1].getElementsByTagName('img')[0].src.split('/').length-1].split('_')[1]!='kralji' )
+    if( y+1<8 && document.getElementById('tabla').rows[x+1].cells[y+1].innerHTML.includes("beli") )
     {
     potezi += (x + 1) + "-" + (y + 1) + ",";}
-    if( y-1>=0 && document.getElementById('tabla').rows[x+1].cells[y-1].innerHTML.includes("beli")  && document.getElementById('tabla').rows[x+1].cells[y+1].getElementsByTagName('img')[0].src.split('/')[document.getElementById('tabla').rows[x+1].cells[y+1].getElementsByTagName('img')[0].src.split('/').length-1].split('_')[1]!='kralji' ){
+    if( y-1>=0 && document.getElementById('tabla').rows[x+1].cells[y-1].innerHTML.includes("beli") ){
     potezi += (x + 1) + "-" + (y - 1) + ",";}
 }
         else
 {
     if(x-1>=0 && document.getElementById('tabla').rows[x-1].cells[y].innerHTML=="")
     {potezi += (x -1) + "-" + y + ",";}
-    if(y+1<8 && document.getElementById('tabla').rows[x-1].cells[y+1].innerHTML.includes("crni") && document.getElementById('tabla').rows[x+1].cells[y+1].getElementsByTagName('img')[0].src.split('/')[document.getElementById('tabla').rows[x+1].cells[y+1].getElementsByTagName('img')[0].src.split('/').length-1].split('_')[1]!='kralj')
+    if(y+1<8 && document.getElementById('tabla').rows[x-1].cells[y+1].innerHTML.includes("crni") )
     {potezi += (x - 1) + "-" + (y + 1) + ",";}
-    if(y-1>=0 && document.getElementById('tabla').rows[x-1].cells[y-1].innerHTML.includes("crni") && document.getElementById('tabla').rows[x+1].cells[y+1].getElementsByTagName('img')[0].src.split('/')[document.getElementById('tabla').rows[x+1].cells[y+1].getElementsByTagName('img')[0].src.split('/').length-1].split('_')[1]!='kralj'){  potezi += (x - 1) + "-" + (y - 1) + ",";}
+    if(y-1>=0 && document.getElementById('tabla').rows[x-1].cells[y-1].innerHTML.includes("crni") ){  potezi += (x - 1) + "-" + (y - 1) + ",";}
 }
 
 
