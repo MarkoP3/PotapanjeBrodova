@@ -90,7 +90,7 @@ function selekt(element,akcija) {
                     document.getElementsByClassName('orijentacija')[0].innerText="Select a ship";
                     if(document.getElementById('flota').getElementsByTagName('img').length==0)
                     {
-                        alert("postavljeni svi");
+                        alert("All set!");
                         document.getElementsByClassName('orijentacija')[0].innerText="";
                         document.getElementById('ready').style.display="block";
                     }
