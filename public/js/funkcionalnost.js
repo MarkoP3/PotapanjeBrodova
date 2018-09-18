@@ -17,10 +17,10 @@ function rotate()
     if(event.key=="r" && velicina!=0) {
         if (orijentacija == 0){
             orijentacija = 1;
-            document.getElementsByClassName('orijentacija')[0].innerText="Uspravno- "+velicina+" mesta";}
+            document.getElementsByClassName('orijentacija')[0].innerText="Horizontally- "+velicina+" spaces";}
         else{
             orijentacija = 0;
-            document.getElementsByClassName('orijentacija')[0].innerText="Vodoravno- "+velicina+" mesta";
+            document.getElementsByClassName('orijentacija')[0].innerText="Verticaly- "+velicina+" spaces";
         }
        selekt(lastselect,"odabir");
     }
@@ -32,10 +32,10 @@ function selektovano(element)
     document.getElementsByClassName('selected_item')[0].getElementsByTagName("img")[0].src=izabran.src;
     if(orijentacija==0)
     {
-        document.getElementsByClassName('orijentacija')[0].innerText="Vodoravno- "+velicina+" mesta";
+        document.getElementsByClassName('orijentacija')[0].innerText="Horizontally- "+velicina+" spaces";
     }
     else
-        document.getElementsByClassName('orijentacija')[0].innerText="Uspravno- "+velicina+" mesta";
+        document.getElementsByClassName('orijentacija')[0].innerText="Vertically- "+velicina+" spaces";
 }
 function refresh() {
     for (var e = 0; e < postavljene.length; e++)
@@ -87,7 +87,7 @@ function selekt(element,akcija) {
                     velicina=0;
                     izabran.parentNode.removeChild(izabran);
                     document.getElementsByClassName('selected_item')[0].getElementsByTagName("img")[0].src="";
-                    document.getElementsByClassName('orijentacija')[0].innerText="Izaberite brod";
+                    document.getElementsByClassName('orijentacija')[0].innerText="Select a ship";
                     if(document.getElementById('flota').getElementsByTagName('img').length==0)
                     {
                         alert("postavljeni svi");
@@ -121,10 +121,10 @@ function selekt(element,akcija) {
                 if(akcija=="postavi"){velicina=0;
                     izabran.parentNode.removeChild(izabran);
                     document.getElementsByClassName('selected_item')[0].getElementsByTagName("img")[0].src="";
-                    document.getElementsByClassName('orijentacija')[0].innerText="Izaberite brod";
+                    document.getElementsByClassName('orijentacija')[0].innerText="Select a ship";
                     if(document.getElementById('flota').getElementsByTagName('img').length==0)
                     {
-                        alert("postavljeni svi");
+                        alert("All set!");
                         document.getElementsByClassName('orijentacija')[0].innerText="";
                         document.getElementById('ready').style.display="block";
                     }
