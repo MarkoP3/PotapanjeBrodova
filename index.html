@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+ <link href="public/css/izgled.css" rel="stylesheet" type="text/css">
+
+    <script src="/socket.io/socket.io.js"></script>
+    <title>TEST</title>
+</head>
+<body onkeypress="rotate()">
+<div class="wrap" align="center">
+<table id="tabla">
+    <tr>
+        <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+        <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+        <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+        <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+        <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+        <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+        <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+        <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+        <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    </tr>
+    <tr>
+    <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+</tr>
+    <tr>
+        <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    </tr>
+    <tr>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    </tr>
+    <tr>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    </tr>
+    <tr>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    </tr>
+    <tr>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    </tr>
+    <tr>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    </tr>
+    <tr>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+         <td onmouseover="selekt(this,'odabir')" onclick="selekt(this,'postavi')"></td>
+    </tr>
+  </table>
+<div>
+    <div class="selected_item">
+    <img src="">
+    </div>
+    <div class="orijentacija">
+    </div>
+    <input type="submit" value="Ready to attack!" style="display: none" id="ready" onclick="findGame(postavljene)">
+</div>
+    <table id="protivnik">
+        <tr>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+        </tr>
+
+        <tr>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+            <td onclick="attack(this)"></td>
+        </tr>
+    </table>
+</div>
+<div id="flota">
+<img id="battleship.png" src="public/media/battleship.png" onclick="selektovano(this)">
+<img id="aircraft_carrier.png" src="public/media/aircraft_carrier.png" onclick="selektovano(this)">
+<img id="Destroyer.png" src="public/media/Destroyer.png" onclick="selektovano(this)">
+<img id="Submarine.png" src="public/media/Submarine.png" onclick="selektovano(this)">
+<img id="Small_ship.png" src="public/media/Small_ship.png" onclick="selektovano(this)">
+</div>
+</body>
+<script src="public/js/funkcionalnost.js"></script>
+</html>
