@@ -65,6 +65,22 @@ socket.on("attack", function (data) {
    }
 });
     socket.on("disconnect", function () {
+        for(var i=0;i<gamesready.length;i++)
+        {
+            if(gamesready[i].player1==socket.id)
+            {
+                io.to(gamesready[i].player2).emit("enemyDisconnected");
+                gamesready.splice(i,1);
+                break;
+            }
+            else if(gamesready[i].player2==socket.id)
+            {
+                io.to(gamesready[i].player1).emit("enemyDisconnected");
+                gamesready.splice(i,1);
+                break;
+            }
+                }
  sockets.splice(sockets.indexOf(socket.id),1);
     });
 });
+
