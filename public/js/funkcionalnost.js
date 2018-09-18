@@ -145,6 +145,10 @@ function attack(element)
         socket.emit("attack", {gameid: gameId, block: element.cellIndex + (element.parentNode.rowIndex * 9)});
         element.style.pointerEvents="none";
     }
+    else
+    {
+        alert("It's not your turn wait for your turn!");
+    }
 }
 socket.on("hit",function(data)
 {
@@ -167,7 +171,11 @@ socket.on("hit",function(data)
         {
             postavljene[data.ship]=2;
             tabela.rows[parseInt(data.ship/9)].cells[data.ship-parseInt(data.ship/9)*9].style.backgroundColor="red";
-            alert("You got hit!");
+            alert("You got hit! Your turn to play!");
+        }
+        else
+        {
+            alert("Enemy missed!Your turn to play!");
         }
     }
 });
@@ -191,3 +199,4 @@ socket.on("gameFound",function (data)
     alert("Your turn to play");
     }
 });
+
