@@ -1,0 +1,32 @@
+body
+{padding: 0;
+    margin: 0;}
+table
+{
+    width: 270px;
+    height: 270px;
+    background-color: cadetblue;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+}
+
+td{
+    border: 1px solid gray;
+
+}
+.wrap
+{
+    width: 100%;
+    display: inline-flex;
+    margin: auto;
+
+}
+
+
+.wrap div{
+    width: 150px;
+    height: 30px;
+    background-color: whitesmoke;
+}
+
