@@ -17,10 +17,10 @@ function rotate()
     if(event.key=="r" && velicina!=0) {
         if (orijentacija == 0){
             orijentacija = 1;
-            document.getElementsByClassName('orijentacija')[0].innerText="Horizontally- "+velicina+" spaces";}
+            document.getElementsByClassName('orijentacija')[0].innerText="Verticaly- "+velicina+" spaces";}
         else{
             orijentacija = 0;
-            document.getElementsByClassName('orijentacija')[0].innerText="Verticaly- "+velicina+" spaces";
+            document.getElementsByClassName('orijentacija')[0].innerText="Horizontally- "+velicina+" spaces";
         }
        selekt(lastselect,"odabir");
     }
