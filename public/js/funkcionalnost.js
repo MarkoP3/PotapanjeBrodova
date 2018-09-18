@@ -1,7 +1,7 @@
 /**
  * Created by Puzovic on 9/17/2018.
  */
-document.getElementsByClassName('selected_item')[0].getElementsByTagName("img")[0].src=""; document.getElementsByClassName('orijentacija')[0].innerText="Izaberite brod";
+document.getElementsByClassName('selected_item')[0].getElementsByTagName("img")[0].src=""; document.getElementsByClassName('orijentacija')[0].innerText="Select a ship";
 var socket=io.connect();
 var orijentacija=0;
 var lastselect;
