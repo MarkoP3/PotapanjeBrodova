@@ -17,7 +17,7 @@ function rotate()
     if(event.key=="r" && velicina!=0) {
         if (orijentacija == 0){
             orijentacija = 1;
-            document.getElementsByClassName('orijentacija')[0].innerText="Verticaly- "+velicina+" spaces";}
+            document.getElementsByClassName('orijentacija')[0].innerText="Vertically- "+velicina+" spaces";}
         else{
             orijentacija = 0;
             document.getElementsByClassName('orijentacija')[0].innerText="Horizontally- "+velicina+" spaces";
@@ -90,7 +90,7 @@ function selekt(element,akcija) {
                     document.getElementsByClassName('orijentacija')[0].innerText="Select a ship";
                     if(document.getElementById('flota').getElementsByTagName('img').length==0)
                     {
-                        alert("All set!");
+                        alert("postavljeni svi");
                         document.getElementsByClassName('orijentacija')[0].innerText="";
                         document.getElementById('ready').style.display="block";
                     }
@@ -198,5 +198,9 @@ socket.on("gameFound",function (data)
         yourTurn = true;
     alert("Your turn to play");
     }
+});
+socket.on("enemyDisconnected",function()
+{
+    location.reload();
 });
 
