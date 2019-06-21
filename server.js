@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-var server=app.listen(8080);
+var server=app.listen(precess.env.PORT || 8080);
 var sockets=[];
 var games = {player1:"", player1data:"", player2: "", player2data: "",player1hit:0,player2hit:0};
 var gamesready=[];
