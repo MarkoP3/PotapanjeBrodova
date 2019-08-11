@@ -1,3 +1,11 @@
+var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  host: "eu-cdbr-west-02.cleardb.net",
+  user: "bb172b2bbbcbcc",
+  password: "2d6dcd81",
+  database: "heroku_782cc07843c58ac"
+});
 const express = require('express');
 const app = express();
 var server=app.listen(process.env.PORT || 8080);
@@ -6,7 +14,15 @@ var games = {player1:"", player1data:"", player2: "", player2data: "",player1hit
 var gamesready=[];
 var io=require('socket.io').listen(server);
 app.get('/', function (zahtev,odgovor) {
+   con.connect(function(err) {
+  if (err) throw err;
+  con.query("SELECT * FROM tblkorisnik", function (err, result, fields) {
+    if (err) throw err;
+    console.log(result);
+  });
+});
    odgovor.sendFile(__dirname+'/index.html');
+   
 });
 app.use('/public',express.static('public'));
 
