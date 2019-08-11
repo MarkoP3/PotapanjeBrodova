@@ -80,7 +80,6 @@ socket.on("attack", function (data) {
    }
 });
     socket.on("disconnect", function () {
-      con.end();
         for(var i=0;i<gamesready.length;i++)
         {
             if(gamesready[i].player1==socket.id)
