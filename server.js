@@ -18,10 +18,11 @@ app.get('/', function (zahtev,odgovor) {
   if (err) throw err;
   con.query("SELECT * FROM tblkorisnik", function (err, result, fields) {
     if (err) throw err;
-    console.log(result);
+    odgovor.write(JSON.stringify(result));
+  odgovor.end();
   });
 });
-   odgovor.sendFile(__dirname+'/index.html');
+  // odgovor.sendFile(__dirname+'/index.html');
    
 });
 app.use('/public',express.static('public'));
