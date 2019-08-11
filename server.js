@@ -15,9 +15,7 @@ var gamesready=[];
 var io=require('socket.io').listen(server);
 app.get('/', function (zahtev,odgovor) {
    con.connect(function(err) {
-  if (err) throw err;
   con.query("SELECT * FROM tblkorisnik", function (err, result, fields) {
-    if (err) throw err;
     odgovor.write(JSON.stringify(result));
   odgovor.end();
   });
